@@ -89,6 +89,7 @@ const StudentPage: NextPage<StudentProps> = ({ student }) => {
   };
 
   const handleStudentUpdate = async () => {
+    setUpdateLoading(true);
     try {
       let hasError = false;
       if (name.trim().length <= 0) {

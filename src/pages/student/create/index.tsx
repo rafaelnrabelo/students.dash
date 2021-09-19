@@ -90,6 +90,7 @@ const CreatePage: NextPage = () => {
   };
 
   const handleStudentCreate = async () => {
+    setSaveLoading(true);
     try {
       let hasError = false;
       if (name.trim().length <= 0) {
