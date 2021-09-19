@@ -123,7 +123,7 @@ const CreatePage: NextPage = () => {
         duration: 5000,
         isClosable: true,
       });
-      router.replace(`/student/view/${data.id}`);
+      router.replace("/");
     } catch (error) {
       setSaveLoading(false);
       toast({
