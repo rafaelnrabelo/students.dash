@@ -94,10 +94,12 @@ const StudentPage: NextPage<StudentProps> = ({ student }) => {
       let hasError = false;
       if (name.trim().length <= 0) {
         setNameError(true);
+        setUpdateLoading(false);
         hasError = true;
       }
       if (address.trim().length <= 0) {
         setAddressError(true);
+        setUpdateLoading(false);
         hasError = true;
       }
 
