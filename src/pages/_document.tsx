@@ -7,7 +7,7 @@ export default class MyDocument extends Document {
       <Html lang="pt-br">
         <Head>
           <meta charSet="utf-8" />
-          <meta name="theme-color" content="#097d77" />
+          <meta name="theme-color" content="#fff" />
           <meta
             name="description"
             content="Uma dashboard para acompanhar seus alunos!"
