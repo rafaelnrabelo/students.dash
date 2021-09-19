@@ -95,10 +95,12 @@ const CreatePage: NextPage = () => {
       let hasError = false;
       if (name.trim().length <= 0) {
         setNameError(true);
+        setSaveLoading(false);
         hasError = true;
       }
       if (address.trim().length <= 0) {
         setAddressError(true);
+        setSaveLoading(false);
         hasError = true;
       }
 
