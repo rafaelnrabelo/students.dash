@@ -1,0 +1,14 @@
+.tableWrapper {
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-300);
+  background-color: var(--white);
+}
+
+.tableRow {
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.025);
+  }
+}

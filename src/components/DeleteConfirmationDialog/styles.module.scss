@@ -1,0 +1,40 @@
+.deleteButton {
+  background-color: var(--red-500) !important;
+  color: #fff;
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    box-shadow: none !important;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 2px !important;
+  }
+}
+
+.cancelButton {
+  transition: all 0.2s;
+
+  &:focus {
+    box-shadow: none !important;
+  }
+
+  &:focus-visible {
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 2px !important;
+  }
+}
+
+.modalOverlay {
+  backdrop-filter: blur(8px);
+  background: var(--chakra-colors-blackAlpha-400) !important;
+}
+
+.modalContent {
+  margin-left: 10px;
+  margin-right: 10px;
+}

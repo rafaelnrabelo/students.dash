@@ -1,0 +1,35 @@
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: var(--chakra-radii-md);
+  font-weight: bold;
+  font-size: 16px;
+  transition: opacity 0.2s;
+
+  &:hover {
+    box-shadow: none;
+    opacity: 0.8;
+  }
+}
+
+.ButtonSolid {
+  color: #fff;
+  background-color: var(--blue-400);
+
+  &:disabled {
+    background-color: var(--gray-300);
+    cursor: not-allowed;
+  }
+}
+
+.ButtonOutlined {
+  border: 2px solid var(--blue-400);
+  color: var(--blue-400);
+
+  &:disabled {
+    border-color: var(--gray-300);
+    cursor: not-allowed;
+  }
+}

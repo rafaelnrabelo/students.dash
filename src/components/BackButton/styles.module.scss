@@ -1,0 +1,20 @@
+.backButton {
+  position: relative;
+  top: calc(1.5rem + 34px);
+  left: 1.5rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    border: 1px solid var(--gray-300);
+  }
+
+  &:hover svg {
+    opacity: 0.6;
+  }
+}

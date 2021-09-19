@@ -1,0 +1,43 @@
+.tablePagination {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    border: 1px solid;
+    border-color: var(--gray-300);
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.2s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover:not(:disabled) {
+      filter: brightness(0.5);
+    }
+
+    &:disabled {
+      opacity: 0.8;
+      cursor: not-allowed;
+    }
+
+    &.activePage {
+      border-color: var(--blue-400);
+      background-color: var(--blue-400);
+      color: var(--white);
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+
+  button + button {
+    margin-left: 5px;
+  }
+}
